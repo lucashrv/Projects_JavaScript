@@ -6,5 +6,5 @@ function randomNum(){
 
     const random = Math.floor(Math.random() * (final - init + 1) + init)
 
-    const result = document.querySelector('#result').value = random
+    document.querySelector('#result').value = random
 }
