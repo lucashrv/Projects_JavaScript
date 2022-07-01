@@ -1,0 +1,19 @@
+body{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+#container-input{
+    padding-top: 20px;
+    width: 70%;
+    margin: 0 auto
+}
+#container-result{
+    padding-top: 20px;
+    width:25%;
+    margin: 0 auto;
+}
+#result{
+    text-align: center;
+    font-size: 1.2rem;
+}
