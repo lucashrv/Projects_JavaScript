@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgb(214, 255, 203), rgb(146, 255, 146), rgb(255, 255, 104));
+  font-family: 'Roboto', sans-serif;
+}
+
+#question{
+  font-size: 1.8rem;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.clear-score{
+  width: 35%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 173, 173);
+  color: white;
+  cursor: pointer;
+}
+
+.clear-score:hover{
+  background-color: rgb(0, 208, 208);
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.form {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 10px 15px black;
+  display: flex;
+  flex-direction:  column;
+  min-width: 301px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 7px;
+  border: solid 2px aqua;
+  color: black;
+}
+
+
+.btn {
+  background-color: rgb(0, 173, 173);
+  color: white;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(0, 208, 208);
+}
+
+.score {
+  color: rgb(2, 158, 158);
+  text-align: right;
+  font-size: 1.1rem;
+  display: inline;
+}
