@@ -1,7 +1,7 @@
 # Projects
 Projects created with HTML / CSS / JavaScript / Bootstrap
 
-# Deploys
+# Deploy
 ### Table filter - https://table-filter-deploy.netlify.app
 ### Calculator - https://calculator-deploy.netlify.app
 ### Game mata mosquito - https://game-deploy.netlify.app
