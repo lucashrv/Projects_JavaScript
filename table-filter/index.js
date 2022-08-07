@@ -130,12 +130,16 @@ const info = [
 ]
 
 const tbody = document.querySelector("#tbody")
+const inputSearch = document.querySelector("#input-search")
+const notFound = document.querySelector("#not-found")
 
 function filterTable(type){
 
     const newInfo = info.filter(item => item.compra_efetuada === type)
 
     renderTable(newInfo)
+
+    notFound.style.display = 'none'
 }
 
 function renderTable(newInfo = info){
@@ -168,6 +172,24 @@ function renderTable(newInfo = info){
         `
     })
     tbody.innerHTML = items.join('')
+    notFound.style.display = 'none'
 }
 
+inputSearch.addEventListener("keyup", event => {
+    const inputValue = event.target.value.trim().toLowerCase()
+    let countFalse = 0
+
+    for(let i = 0; i < tbody.rows.length; i++){
+
+        let contentName = tbody.rows[i].cells[1].innerText
+        let cellFilter = contentName.toLowerCase().indexOf(inputValue) >= 0
+
+        tbody.rows[i].style.display = cellFilter ? 'table-row' : 'none'
+
+        if(!cellFilter){
+            countFalse++
+        }
+    }
+    notFound.style.display = countFalse === tbody.rows.length ? '' : 'none'
+})
 renderTable()

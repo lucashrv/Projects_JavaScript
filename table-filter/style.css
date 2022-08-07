@@ -11,9 +11,15 @@ body{
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container{
-    width: 1035px;
-    margin: 0 auto;
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+form{
+    margin-left: 20px;
 }
 
 table{
@@ -32,6 +38,22 @@ thead{
     color: white;
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#input-search{
+    margin-left: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.container{
+    margin: 0 auto;
+    border: 1px solid;
+}
+
 .dropbtn {
     background-color: rgb(0, 140, 255);
     color: white;
@@ -45,7 +67,6 @@ thead{
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 10px 0;
 }
 
 .dropdown-content {

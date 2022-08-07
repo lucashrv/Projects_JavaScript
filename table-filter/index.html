@@ -9,13 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="dropdown">
-            <button onclick="renderTable()" class="dropbtn">Efetuado</button>
-            <div class="dropdown-content">
-            <a onclick="filterTable('SIM')" href="#">SIM</a>
-            <a onclick="filterTable('NAO')" href="#">NÃO</a>
+
+        <header>
+            <div class="dropdown">
+                <button onclick="renderTable()" class="dropbtn">Efetuado</button>
+                <div class="dropdown-content">
+                <a onclick="filterTable('SIM')" href="#">SIM</a>
+                <a onclick="filterTable('NAO')" href="#">NÃO</a>
+                </div>
             </div>
-        </div>
+
+            <form>
+                <span>Pesquisar</span>
+
+                <input
+                    id="input-search"
+                    type="text"
+                    placeholder="Digite aqui"
+                    autocomplete="off"
+                    autofocus
+                >
+            </form>
+        </header>
 
         <table>
             <thead>
@@ -34,6 +49,11 @@
             </thead>
 
             <tbody id="tbody"></tbody>
+            <tbody>
+                <tr>
+                    <td id="not-found" style="display: none;" colspan="10">Guia não encontrada</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
