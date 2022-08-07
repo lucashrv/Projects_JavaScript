@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Table Filter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button onclick="renderTable()" class="dropbtn">Efetuado</button>
+            <div class="dropdown-content">
+            <a onclick="filterTable('SIM')" href="#">SIM</a>
+            <a onclick="filterTable('NAO')" href="#">NÃO</a>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Nome Cliente</th>
+                    <th>Telefone cliente</th>
+                    <th>Nome loja</th>
+                    <th>Telefone loja</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unidade</th>
+                    <th>Preço Total</th>
+                    <th>Efetuado</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
